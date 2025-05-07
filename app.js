@@ -1,3 +1,4 @@
+// slider hissesi
 const track = document.querySelector(".slider-track");
 const dots = document.querySelectorAll(".dot");
 let index = 0;
@@ -16,6 +17,16 @@ function nextSlide() {
 
 setInterval(nextSlide, 5000);
 
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlider();
+  });
+});
+
+
+// slider hissesi
 
 const burger = document.getElementById('burger');
 const navLinks = document.querySelector('.nav-links');

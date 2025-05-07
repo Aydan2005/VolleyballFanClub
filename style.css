@@ -10,7 +10,7 @@ body {
     font-family: "Merriweather", serif;
     overflow-x: hidden;
 }
-
+/* header hissesi */
   .navbar {
     display: flex;
     align-items: center;
@@ -84,7 +84,11 @@ body {
     gap: 15px;
     color: yellow;
   }
-
+  .lang-switch{
+    text-decoration: none;
+    color: yellow;
+  }
+  
   .join-btn {
     background-color: yellow;
     font-family: "Merriweather", serif;
@@ -143,6 +147,9 @@ body {
       display: flex;
     }
   }
+/* header hissesi */
+
+  /* slider hissesi */
   
   .slider-container {
     width: 100%;
@@ -154,7 +161,7 @@ body {
   .slider-track {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transition: transform 1s ease-in-out;
   }
   
@@ -200,14 +207,14 @@ body {
       opacity: 1;
     }
   }
-  
+  /* slider hissesi */
 
   .motivation{
     position: absolute;
     width: 600px;
     height: 100vh;
     top: 80px;
-    border: 2px solid rgb(0, 51, 102) ;
+    /* border: 2px solid rgb(0, 51, 102); */
     background-color: rgba(0, 51, 102, 0.7);
     display: flex;
     justify-content: center;
@@ -215,7 +222,6 @@ body {
     gap: 20px;
     padding: 40px;
     color: white;
-
     animation: slideInFromLeft 1.2s ease-out forwards;
   }
   .motiv{
