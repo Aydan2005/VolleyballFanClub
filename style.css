@@ -331,6 +331,7 @@ body {
   width: 120px;
   height: 120px;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .advertisement:hover {
@@ -392,6 +393,11 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+}
+
+.footer-lang{
+  color: white;
+  text-decoration: none;
 }
 
 .menu a::after {
