@@ -66,3 +66,50 @@ document.querySelectorAll('.sec1-team').forEach(team => {
     });
   });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('.player-carousel');
+
+  carousels.forEach(carousel => {
+    const track = carousel.querySelector('.player-track');
+    const cards = carousel.querySelectorAll('.player-card');
+    const leftArrow = carousel.querySelector('.arrow.left');
+    const rightArrow = carousel.querySelector('.arrow.right');
+
+    let currentIndex = 0; 
+
+    const updateCarousel = () => {
+      const cardWidth = cards[0].offsetWidth + 20; 
+      const offset = (cardWidth * currentIndex);
+      track.style.transform = `translateX(-${offset}px)`;
+
+      cards.forEach((card, index) => {
+        card.classList.remove('active');
+      });
+
+      const centerIndex = currentIndex + 1;
+      if (cards[centerIndex]) {
+        cards[centerIndex].classList.add('active');
+      }
+    };
+
+    leftArrow.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    rightArrow.addEventListener('click', () => {
+      if (currentIndex < cards.length - 3) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    updateCarousel();
+  });
+});
