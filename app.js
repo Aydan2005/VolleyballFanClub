@@ -26,7 +26,6 @@ dots.forEach((dot, i) => {
 });
 
 
-// slider hissesi
 
 const burger = document.getElementById('burger');
 const navLinks = document.querySelector('.nav-links');
