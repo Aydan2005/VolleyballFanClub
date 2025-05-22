@@ -9,18 +9,6 @@ burger.addEventListener('click', () => {
 
 
 
-const nameInput = document.querySelector(".name");
-const surnameInput = document.querySelector(".surname");
-
-function preventNumbers(e) {
-    const value = e.target.value;
-    e.target.value = value.replace(/[0-9]/g, "");
-}
-
-nameInput.addEventListener("input", preventNumbers);
-surnameInput.addEventListener("input", preventNumbers);
-
-
 
 const form2 = document.querySelector(".register-form2");
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/signUP.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="header-logo">
+        <a href="indexEN.html">
+            <img src="./assets/img/logo/agFanClubLogo.png" alt="Fan Club Logo" />
+        </a>
+        </div>
+
+        <nav class="nav-links">
+        <a href="./indexEN.html" class="header-link">Home</a>
+        <a href="./komandaEN.html" class="header-link">Team</a>
+        <a href="#" class="header-link">Match Schedule</a>
+        <a href="#" class="header-link">About the Fan Club</a>
+        <a href="#" class="header-link">Contact</a>
+        </nav>
+
+        <div class="right-icons">
+        <a href="./signUP.html" class="lang-switch">
+            <i class="fa-solid fa-globe"></i>
+            <span> EN</span>
+        </a>
+        
+        </div>
+        <div class="burger" id="burger">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section>
+            <video autoplay muted loop id="bgVideo">
+                <source src="./assets/img/sign/IMG_0394.MP4" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+
+            <div class="overlay">
+                <div class="left">
+                    <h2>"Register <span>now</span> and take one step closer to your favorite volleyball team!"</h2>
+                </div>
+                <div class="form-container">
+                    <h3>Join us.</h3>
+                    <form class="register-form2">
+                        <div class="input-icon">
+                            <input type="text" placeholder="User name or email" required class="user-name">
+                            <i class="fas fa-user"></i>
+                        </div>
+
+                        <!-- <div class="row">
+                            <div class="input-icon">
+                            <input type="text" placeholder="Name" required class="name">
+                            <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="input-icon">
+                            <input type="text" placeholder="Surname" required class="surname">
+                            <i class="fas fa-id-card"></i>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="input-icon">
+                            <input type="email" placeholder="E-mail address" required class="email">
+                            <i class="fas fa-envelope"></i>
+                        </div> -->
+                        
+                        <div class="input-icon">
+                            <input type="password" placeholder="Password" required class="password2">
+                            <i class="fas fa-eye-slash toggle-password2"></i>
+                        </div>
+
+                        <button type="submit" class="submit ">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="./assets/js/signUPEN.js"></script>
+</body>
+</html>
