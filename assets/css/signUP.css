@@ -276,3 +276,155 @@ button.submit:hover {
   object-fit: cover;
   z-index: -1;
 }
+
+
+
+
+
+
+/* footer */
+
+
+
+.footer {
+  background-color: rgb(0, 51, 102);
+  color: white;
+  padding: 40px 20px 20px;
+  letter-spacing: 1px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.logo img {
+  height: 120px;
+  
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.6);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menu a {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-lang{
+  color: white;
+  text-decoration: none;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 1.5px solid #ffffff80;
+  border-radius: 8px;
+  transform: rotate(0deg) scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.3s;
+}
+
+.menu a:hover {
+  color: #aad4ff;
+}
+
+.menu a:hover::after {
+  transform: rotate(360deg) scale(1);
+  opacity: 1;
+}
+
+.menu a:hover {
+  color: #aad4ff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.lang-icon {
+  background-color: #195ba1;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.lang-icon:hover{
+  background-color: #7b99d5;
+  transform: scale(1.4);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  background-color: #195ba1;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #7b99d5;
+  transform: scale(1.4);
+}
+
+.footer-bottom {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+
