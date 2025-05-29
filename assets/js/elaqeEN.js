@@ -13,8 +13,7 @@ burger.addEventListener('click', () => {
   rightIcons.classList.toggle('active');
 });
 
-
 document.querySelector("#form").addEventListener("submit",(e)=>{
-  e.preventDefault();
-  window.location.href = "index.html";
+    e.preventDefault();
+    window.location.href = "indexEN.html";
 })
